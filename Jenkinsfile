@@ -19,7 +19,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Assuming you're using Git as source code management tool
-                git 'https://github.com/your-repo/your-project.git'
+                git 'https://github.com/MoyosoreOdumosu/Small-Business-Inventory.git'
             }
         }
 
