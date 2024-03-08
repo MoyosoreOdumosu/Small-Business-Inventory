@@ -1,0 +1,17 @@
+{
+  "name": "small-business-inventory",
+  "version": "1.0.0",
+  "description": "A smart contract for managing a small business inventory.",
+  "main": "truffle-config.js",
+  "scripts": {
+    "test": "truffle test",
+    "compile": "truffle compile",
+    "migrate": "truffle migrate",
+    "start-ganache": "ganache-cli"
+  },
+  "dependencies": {
+    "ganache-cli": "^6.12.2",
+    "truffle": "^5.4.11",
+    "solc": "^0.8.7"
+  }
+}
