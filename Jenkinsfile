@@ -2,12 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone Git repository') {
-            steps {
-                git 'https://github.com/MoyosoreOdumosu/Small-Business-Inventory.git' // replace with your repository URL
-            }
-        }
-
         stage('Setup') {
             steps {
                 script {
