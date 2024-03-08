@@ -5,13 +5,13 @@ pipeline {
         stage('Install dependencies') {
             steps {
                 bat 'npm install -g truffle'
-                bat 'npm install -g ganache-cli'
+                bat 'npm install -g ganache'
             }
         }
 
         stage('Start Ganache') {
             steps {
-                bat 'start /b ganache-cli > ganache-output.txt 2>&1'
+                bat 'start /b ganache > ganache-output.txt 2>&1'
                 sleep 15  // Wait for Ganache to start
             }
         }
