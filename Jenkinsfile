@@ -18,8 +18,14 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                // Assuming you're using Git as source code management tool
+                // using Git as source code management tool
                 git 'https://github.com/MoyosoreOdumosu/Small-Business-Inventory.git'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                bat 'truffle test'
             }
         }
 
@@ -30,15 +36,10 @@ pipeline {
             }
         }
 
-        stage('Test') {
-            steps {
-                bat 'truffle test'
-            }
-        }
-
+        
         stage('Deploy') {
             steps {
-                bat 'truffle migrate'
+                bat 'truffle Deploy'
             }
         }
     }
