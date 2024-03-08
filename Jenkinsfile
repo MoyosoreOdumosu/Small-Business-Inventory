@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     try {
-                        bat 'npm init -y'
+                
                         bat 'npm install -g truffle'
                         bat 'npm install -g ganache-cli'
                         bat 'npm install'
